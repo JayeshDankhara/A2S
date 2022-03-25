@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">A2S</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="verify">Verify</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="search_here">Search here</string>
+    <string name="access_2_success">Access 2 Success</string>
+    <string name="health_card_number">Health Card Number</string>
+    <string name="location">Location</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="carddetails">CardDetails</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="internet_string">Check Internet</string>
+    <string name="isLayoutRight">false</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="help_center">Help center</string>
+    <string name="card_details">Card Details</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="mail_id">Mail ID</string>
+    <string name="support_a2s_com">support@a2s.com</string>
+    <string name="support">Support</string>
+    <string name="inbox">Inbox</string>
+    <string name="select_hospital">Select Hospital</string>
+
+</resources>
