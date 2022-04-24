@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="branch_box_margin_s">10dp</dimen>
+    <dimen name="branch_box_margin_t">10dp</dimen>
+    <dimen name="branch_box_margin_e">10dp</dimen>
+    <dimen name="branch_box_margin_b">10dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_25sdp">25dp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+</resources>

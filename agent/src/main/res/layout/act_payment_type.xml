@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".activities.ActPaymentType">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="Payment Type"
+            android:textColor="@color/gray_text"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbCash"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/half_circle_4"
+                android:button="@null"
+                android:checked="true"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:text="Cash"
+                android:textColor="@color/gray_text"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/rbFamily"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/half_circle_4"
+                android:button="@null"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:text="Online"
+                android:textColor="@color/gray_text"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+    </LinearLayout>
+</layout>

@@ -26,5 +26,22 @@
     <string name="support">Support</string>
     <string name="inbox">Inbox</string>
     <string name="select_hospital">Select Hospital</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="aadhar">Aadhar</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="submit">Submit</string>
+    <string name="bpl">BPL</string>
+    <string name="apl">APL</string>
+    <string name="others">OTHERS</string>
+    <string name="familyplus">FamilyPlus</string>
+    <string name="health_card_number2">Health Card Number :</string>
+    <string name="location2">Location :</string>
+    <string name="date_of_birth2">Date Of Birth :</string>
+    <string name="gender2">Gender :</string>
+    <string name="mobile_number2">Mobile Number :</string>
+    <string name="back">Back</string>
+    <string name="logout">Logout</string>
+
 
 </resources>

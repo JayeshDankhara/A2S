@@ -19,15 +19,21 @@
             android:src="@drawable/logo" />
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtMobile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/bg_text_box"
             android:hint="@string/mobile_number"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
             android:padding="10dp"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGetOtp"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -37,17 +43,21 @@
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/bg_text_box"
             android:hint="@string/enter_otp"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
             android:padding="10dp"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="150dp"
             android:id="@+id/btnVerify"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/bg_btn"

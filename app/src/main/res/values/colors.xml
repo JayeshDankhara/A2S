@@ -4,6 +4,7 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
+    <color name="trans">#20FFFFFF</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
@@ -14,4 +15,6 @@
     <color name="top_bg_color">#259799</color>
     <color name="float_color">#C4C4C4</color>
     <color name="textHintColor">#C4C4C4</color>
+    <color name="gray_text2">#C4C4C4</color>
+    <color name="radio_bg">#259799</color>
 </resources>

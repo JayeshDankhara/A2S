@@ -13,10 +13,11 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.view.View
 import android.widget.ImageView
-import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import com.bapas.a2s.R
 import com.bapas.a2s.activities.ActBase
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.google.android.material.snackbar.Snackbar
 
 /**
@@ -29,12 +30,12 @@ fun View.gone() {
 }
 
 fun ImageView.setLocalImage(uri: Uri, applyCircle: Boolean = false) {
-    /*val glide = Glide.with(this).load(uri).placeholder(R.drawable.progress_animation)
+    val glide = Glide.with(this).load(uri).placeholder(R.drawable.progress_animation)
     if (applyCircle) {
         glide.apply(RequestOptions.circleCropTransform()).into(this)
     } else {
         glide.into(this)
-    }*/
+    }
 }
 
 fun View.visible() {

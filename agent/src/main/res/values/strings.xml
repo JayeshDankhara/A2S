@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">A2S Agent</string>
+
+    <string name="internet_string">Check Internet</string>
+    <string name="isLayoutRight">false</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="email_id">Email ID</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="carddetails">CardDetails</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="card_details">Card Details</string>
+    <string name="help_center">Help center</string>
+    <string name="search_here">Search here</string>
+    <string name="name">Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="aadhar">Aadhar Number</string>
+    <string name="submit">Submit</string>
+    <string name="bpl">BPL</string>
+    <string name="apl">APL</string>
+    <string name="others">OTHERS</string>
+    <string name="familyplus">FamilyPlus</string>
+    <string name="missing_permissions">Permission Required</string>
+    <string name="error_failed_to_compress_image">Failed to compress image</string>
+    <string name="error_failed_to_crop_image">Failed to crop image</string>
+    <string name="image_picker_provider_authority_suffix">.provider</string>
+    <string name="error_failed_pick_gallery_image">Failed to pick Gallery image</string>
+    <string name="error_task_cancelled">Task Cancelled</string>
+    <string name="error_camera_app_not_found">Camera app not found</string>
+    <string name="error_failed_to_create_camera_image_file">Failed to create Camera image file</string>
+    <string name="permission_camera_denied">
+        <![CDATA[Camera permission is needed to take a picture. Please allow permission from Settings > Permissions.]]></string>
+    <string name="title_choose_image_provider">Choose</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="access_2_success">Access 2 Success</string>
+    <string name="health_card_number">Health Card Number</string>
+    <string name="location">Location</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="health_card_number2">Health Card Number :</string>
+    <string name="location2">Location :</string>
+    <string name="date_of_birth2">Date Of Birth :</string>
+    <string name="gender2">Gender :</string>
+    <string name="mobile_number2">Mobile Number :</string>
+    <string name="select_birth_date">Select Birth Date</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="logout">Logout</string>
+    <string name="back">Back</string>
+    <string name="pan_card">Pan Card</string>
+
+
+</resources>

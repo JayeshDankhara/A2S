@@ -48,9 +48,12 @@ import androidx.core.content.FileProvider
 import androidx.fragment.app.FragmentActivity
 import com.bapas.a2s.BuildConfig
 import com.bapas.a2s.R
+import com.bapas.a2s.model.VerifyOtpData
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.pixplicity.easyprefs.library.Prefs
 import java.io.*
 import java.lang.reflect.Type
 import java.net.HttpURLConnection
@@ -66,7 +69,16 @@ import java.util.regex.Pattern
 
 
 object Utils {
+    var androidevLoader: AndroidevLoader? = null
 
+    fun showAndroidevLoader(c: Context) {
+        androidevLoader = AndroidevLoader(c)
+        androidevLoader?.show()
+    }
+
+    fun closeAndroidevLoader() {
+        androidevLoader?.dismiss()
+    }
 
     fun addFragment(
         @IdRes containerViewId: Int, fragment: androidx.fragment.app.Fragment,
@@ -240,6 +252,9 @@ object Utils {
         return FileProvider.getUriForFile(c, BuildConfig.APPLICATION_ID + ".provider", file)
     }
 
+    fun getUserData(): VerifyOtpData? {
+        return Gson().fromJson(Prefs.getString(Constants.USER_DATA, ""), VerifyOtpData::class.java)
+    }
 
     fun createDialog(layout: Int, c: Context): Dialog {
 
