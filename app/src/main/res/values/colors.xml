@@ -17,4 +17,6 @@
     <color name="textHintColor">#C4C4C4</color>
     <color name="gray_text2">#C4C4C4</color>
     <color name="radio_bg">#259799</color>
+    <color name="txt_color">#003F8A</color>
+    <color name="txt_hint_color">#8B8787</color>
 </resources>

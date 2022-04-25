@@ -23,10 +23,10 @@ class ActProfile : ActBase() {
     private fun setEditEnble(b: Boolean) {
         if(b)
         {
-            mBind.edtAadhar.isEnabled = false
+//            mBind.edtAadhar.isEnabled = false
             mBind.edtEmail.isEnabled = false
             mBind.edtMobile.isEnabled = false
-            mBind.edtPanCard.isEnabled = false
+//            mBind.edtPanCard.isEnabled = false
             mBind.edtName.isEnabled = false
         }
     }
@@ -38,10 +38,10 @@ class ActProfile : ActBase() {
     }
 
     private fun setData() {
-        mBind.edtAadhar.setText(userData?.adhar_card)
+//        mBind.edtAadhar.setText(userData?.adhar_card)
         mBind.edtEmail.setText(userData?.email)
         mBind.edtMobile.setText(userData?.contact_number)
-        mBind.edtPanCard.setText(userData?.pan_card)
+//        mBind.edtPanCard.setText(userData?.pan_card)
         mBind.edtName.setText(userData?.name)
 
     }

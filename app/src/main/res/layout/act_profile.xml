@@ -6,8 +6,8 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_main"
         android:fillViewport="true"
+        tools:background="@color/gray_text2"
         tools:context=".activities.ActProfile">
 
         <LinearLayout
@@ -15,153 +15,216 @@
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:gravity="center"
             android:orientation="vertical">
 
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/bottom_half_bg">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/profile"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
             <ImageView
+                android:id="@+id/imgProfile"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="15dp"
                 android:src="@drawable/logo" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/edtName"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/bg_text_box"
-                android:hint="@string/name"
-                android:padding="10dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white" />
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/bg_text_box"
-                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Your Name"
+                    android:textSize="10sp" />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/edtMobile"
+                    android:id="@+id/edtName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toStartOf="@+id/imgCall"
                     android:background="@null"
-                    android:hint="@string/mobile_number"
-                    android:imeOptions="actionNext"
-                    android:inputType="numberDecimal"
-                    android:maxLength="10"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:gravity="center"
+                    android:hint="@string/name"
+                    android:padding="3dp"
+                    android:textColor="@color/txt_color"
+                    android:textColorHint="@color/txt_color"
+                    android:textSize="15sp" />
 
-                <ImageView
-                    android:id="@+id/imgCall"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="5dp"
-                    android:src="@drawable/ic_call" />
-            </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/bg_text_box"
-                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Your mail ID"
+                    android:textColor="@color/txt_hint_color"
+                    android:textSize="10sp" />
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/edtEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toStartOf="@+id/imgMail"
                     android:background="@null"
+                    android:gravity="center"
                     android:hint="@string/email_id"
                     android:imeOptions="actionNext"
                     android:inputType="textEmailAddress"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:padding="3dp"
+                    android:textColor="@color/txt_color"
+                    android:textColorHint="@color/txt_color"
+                    android:textSize="15sp" />
 
-                <ImageView
-                    android:id="@+id/imgMail"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="5dp"
-                    android:src="@drawable/ic_mail"
-                    app:tint="@color/white" />
-            </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/bg_text_box"
-                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Your Mobile Number"
+                    android:textColor="@color/txt_hint_color"
+                    android:textSize="10sp" />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/edtAadhar"
+                    android:id="@+id/edtMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toStartOf="@+id/imgAadhar"
                     android:background="@null"
-                    android:hint="@string/aadhar"
+                    android:gravity="center"
+                    android:hint="@string/mobile_number"
                     android:imeOptions="actionNext"
                     android:inputType="numberDecimal"
-                    android:maxLength="12"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:maxLength="10"
+                    android:padding="3dp"
+                    android:textColor="@color/txt_color"
+                    android:textColorHint="@color/txt_color"
+                    android:textSize="15sp" />
 
-                <ImageView
-                    android:id="@+id/imgAadhar"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="5dp"
-                    android:src="@drawable/ic_cloud_upload"
-                    app:tint="@color/white" />
-            </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/bg_text_box"
-                android:padding="10dp">
 
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/edtPanCard"
+                <EditText
+                    android:id="@+id/btnDatePicker"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toStartOf="@+id/imgPanCard"
                     android:background="@null"
-                    android:hint="@string/pan_card"
-                    android:imeOptions="actionNext"
-                    android:inputType="numberDecimal"
-                    android:maxLength="12"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:drawableEnd="@drawable/ic_pick_date"
+                    android:gravity="center"
+                    android:hint="Your Date of Birth"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"
+                    android:textColor="@color/txt_color"
+                    android:textColorHint="@color/txt_hint_color"
+                    android:textSize="15sp" />
 
-                <ImageView
-                    android:id="@+id/imgPanCard"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="5dp"
-                    android:src="@drawable/ic_cloud_upload"
-                    app:tint="@color/white" />
-            </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/black" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnBack"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/bg_btn"
-                android:text="@string/back"
-                android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:outlineProvider="bounds">
+
+
+                    <RadioButton
+                        android:id="@+id/rbGenderMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:drawableEnd="@drawable/ic_male"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbGenderFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:drawableEnd="@drawable/ic_female"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_btn"
+                    android:backgroundTint="@color/top_bg_color"
+                    android:text="@string/back"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
 
         </LinearLayout>
 
