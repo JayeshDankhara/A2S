@@ -94,6 +94,7 @@ class ActPaymentType : ActAgentBase(), PaymentResultListener {
         }
     }
 
+
     private fun PaymentSucessCard(payment_type: String) {
         val cast1 = (cast).toRequestBody("text/plain".toMediaTypeOrNull())
         val family1 = family.toRequestBody("text/plain".toMediaTypeOrNull())
